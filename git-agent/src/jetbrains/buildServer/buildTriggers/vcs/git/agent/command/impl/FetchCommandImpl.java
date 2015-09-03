@@ -96,6 +96,7 @@ public class FetchCommandImpl implements FetchCommand {
       myCmd.addParameter("--progress");
     if (myDepth != null)
       myCmd.addParameter("--depth=" + myDepth);
+    myCmd.addParameter("--tags");
     myCmd.addParameter("origin");
     myCmd.addParameter(myRefspec);
     myCmd.setHasProgress(true);
